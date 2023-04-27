@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style1.css">
     <title>The Basic Language of the web: HTML</title>
   </head>
 
@@ -9,39 +10,52 @@
     <!-- <h1>The Basic Language of the web: HTML</h1>
     <h2>The Basic Language of the web: HTML</h2>
     <h3>The Basic Language of the web: HTML</h3>
-    <h4>The Basic Language of the web: HTML</h4>
+    <h4>The Basic Language of the web: HTML</h4> 
     <h5>The Basic Language of the web: HTML</h5>
     <h6>The Basic Language of the web: HTML</h6> -->
-
-    <header>
+    
+  <div class="container">
+    <header class="main-header clearfix">
       <h1>📘 The Code Magazine</h1>
       <nav>
+        <!-- <strong>Ayman Sedik</strong> -->
         <a href="blog.html">Blog</a>
         <a href="#">Challenges</a>
-        <a href="#">Flexbox</a>
-        <a href="#">CSS Grid</a>
+        <a href="flexbox.html">Flexbox</a>
+        <a href="css-grid.html">CSS Grid</a>
       </nav>
     </header>
 
+    <!-- ONLY NECESSARY FOR FLEXBOX -->
+    <!-- <div class="row"> -->
     <article>
+      <header class="post-header">
       <h2>The Basic Language of the Web: HTML</h2>
 
+      <div class="author-box">
       <img
         src="img/laura-jones.jpg"
         alt="Headshot of Laura Jones"
-        width="128px"
-        height="128px"
+        width="50px"
+        height="50px"
+        class="author-img"
+        
       />
 
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      <p id="author" class="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+    </div>
 
       <img
         src="img/post-img.jpg"
         alt="HTML code on a screen"
         width="500px"
         height="200px"
+        class="post-img"
       />
 
+      <button>❤️Like</button>
+      </header>
+      
       <p>
         All modern websites and web applications are built using three
         <em>fundamental</em>
@@ -73,7 +87,7 @@
       <p>In HTML, each element is made up of 3 parts:</p>
 
       <ol>
-        <li>The opening tag</li>
+        <li class="first-li">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -87,14 +101,14 @@
         >
       </p>
 
-      <h4>Why should you learn HTML?</h4>
+      <h3>Why should you learn HTML?</h3>
       <p>
         There are countless reasons for learning the fundamental language of the
         web. Here are 5 of them:
       </p>
 
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-li">To be able to use the fundamental web dev language</li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Worpress or Wix
@@ -105,29 +119,50 @@
       </ul>
 
       <p>Hopefully you learned something new here. See you next time!</p>
-      
+    
     </article>
 
     <aside>
       <h4>Related posts</h4>
-    <ul>
-      <li><img src="img/related-1.jpg "alt="Person Programming"  width="75px" height="75px" > 
-        <a href="#">How to Learn Web Development</a></li>
-      <p>By Jonas Schmedtmann</p>
-      <li><img src="img/related-2.jpg" width="75px" height="75px" alt="Lightning"> 
-        <a href="#">The Unknown Power of CSS</a></li>
-      <p>By Jim Dillon</p>
-      <li><img src="img/related-3.jpg " width="75px" height="75px" alt="JavaScript code on a screen"> 
-        <a href="#">Why JavaScript is Awesome</a></li>
-      <p>By Matilda</p>
+
+    <ul class="related">
+
+      <li class="related-post">
+        <img src="img/related-1.jpg " alt="Person Programming" width="75px" height="75px" > 
+        <div>
+        <a href="#" class="related-link">How to Learn Web Development</a>
+        <p class="related-author">By Jonas Schmedtmann</p>
+      </div>
+      </li>
+      
+      <li class="related-post">
+        <img src="img/related-2.jpg" width="75px" height="75px" alt="Lightning"> 
+        <div>
+        <a href="#" class="related-link">The Unknown Power of CSS </a>
+        <p class="related-author">By Jim Dillon</p>
+      </div>
+      </li>
+
+      <li class="related-post">
+        <img src="img/related-3.jpg " width="75px" height="75px" alt="JavaScript code on a screen"> 
+        <div>
+        <a href="#" class="related-link>">Why JavaScript is Awesome</a>
+        <p class="related-author">By Matilda</p>
+      </div>
+      </li>
+      
     </ul>
 
     <a href="shoe-store.html">shoe store</a>
   </aside>
+<!-- </div> -->
 
-
-
-
-    <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+    <footer>
+      <a href="https://www.linkedin.com/in/ayman-sedik-20aaaa21b/" target="_blank">Ayman Sedik</a>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p> 
+    </footer>
+  </div>
+  <button>❤️Like</button>
+  
   </body>
 </html>
